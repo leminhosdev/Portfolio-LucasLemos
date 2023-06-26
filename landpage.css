@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gothan';
+    src: url(fonts/GothamBold.ttf) format('truetype');
+}
+*{
+    font-family: 'Nunito', sans-serif;
+}
+  
+h1{
+    font-family: 'Gothan';
+    font-size: 3rem;
+    font-weight: 800;
+}
