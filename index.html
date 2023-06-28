@@ -10,8 +10,30 @@
     <title>Lucas Lemos</title>
 </head>
 <body>
-    <header></header>
-    <div class="container">
+    <div class="header" id="header"> 
+        <button onclick="toogleSideBar()" class="icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
+        <div class="logo_header">
+            <img class="image_logo" src="/images/logo.png">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button  onclick="toogleSideBar()" class="icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+            </button>
+            <a href="#" class="active">Inicio</a>
+            <a href="#">Hard skills</a>
+            <a href="#">Projetos</a>
+            <a href="#">Sobre mim</a>
+        </div>
+    </div>
+        
+ 
+    <div class="container" id="container"  tabindex="0" onclick="closeSideBar()">
         <div class="first-part">
             <img class="profile-picture" src="images/mexendo no pc.png">
             <h1 class="stack">Desenvolvedor Fullstack</h1>
@@ -49,14 +71,42 @@
             </div>
             <div class="container-projetos">
                 <h2>Loading...</h2>
-                <img  class="projeto-um" src="images/clock.png">
+                <img  class="projeto-dois" src="images/clock.png">
                 <p>Proximo projeto está em andamento, me siga no linkedin para ficar atualizado sobre as próximas atualizações</p>
                 <a href="https://www.linkedin.com/in/lucas-lemos-b5879625b/">
                     <img class="imagens" id="projeto-linkedin" src="images/linkedin.png" alt="">
             </div>
-
         </div>
     </div>
     <footer></footer>
 </body>
+<script>
+    var header = document.getElementById('header')
+    var navigationHeader = document.getElementById('navigation_header')
+    var container = document.getElementById('container')
+    var showSideBar = false;
+    function toogleSideBar(){
+        showSideBar = !showSideBar;
+        if(showSideBar){
+            navigationHeader.style.marginLeft = '-10vw'
+            navigationHeader.style.animationName = 'sidebar'
+            container.style.filter =  'blur(2px)'
+        } else {
+            navigationHeader.style.marginLeft = '-100vw'
+            container.style.filter =  ''
+            navigationHeader.style.animationName = 'hidesidebar'
+        }
+    }
+    function closeSideBar(){
+        if(showSideBar){
+            toogleSideBar();
+        }
+    }
+
+    window.addEventListener('resize', function(event){
+        if(window.innerWidth > 768 && showSideBar){
+            toogleSideBar();
+        }
+    })
+</script>
 </html>

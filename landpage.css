@@ -8,6 +8,77 @@ body{
     overflow-x: hidden;
     background-color: #f8f8f8;
 }
+.image_logo{
+ width: 45px;
+}
+.header, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    
+    background-color: #fff;
+    box-shadow: 1px 1px 4px black;
+    height: 56px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 4;
+}
+.navigation_header a{
+   text-decoration: none;
+   color: black;
+   font-family: 'Nunito', sans-serif;
+   font-weight: bold;
+}
+.navigation_header a:hover{
+    border-bottom: 4px solid;
+    border-color: black;
+    transition: 0.2s;
+}
+
+.icon_header{
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .icon_header{
+        display: block;
+    }
+    .navigation_header{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #fff;
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    @keyframes sidebar{
+        from{
+            margin-left: -100vw;
+        } to {
+            margin-left: -10vw;
+        }
+    }
+    @keyframes hidesidebar{
+        from{
+            margin-left: -10vw;
+        } to {
+            margin-left: -100vw;
+        }
+    }
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -96,6 +167,11 @@ body{
        .projeto-um{
         width: 90%;
         max-width: 400px;
+       }
+       .projeto-dois{
+        width: 50%;
+        max-width: 400px;
+        filter: drop-shadow(5px 6px 12px rgba(0, 0, 0, 0.308));
        }
        .container-projetos p{
        color: #161e2b;
