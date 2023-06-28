@@ -2,12 +2,174 @@
     font-family: 'Gothan';
     src: url(fonts/GothamBold.ttf) format('truetype');
 }
-*{
-    font-family: 'Nunito', sans-serif;
+body{
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
 }
-  
-h1{
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+.first-part{
+    width: 100%;
+    background: linear-gradient(to top, #161e2b, rgb(32, 45, 88));
+    color: #fff;
     font-family: 'Gothan';
-    font-size: 3rem;
-    font-weight: 800;
+    border-bottom-right-radius: 8%;
+    border-bottom-left-radius: 8%;
 }
+.detalhes{
+    font-family: 'Nunito', sans-serif;
+    font-family: 800;
+    padding: 0 5px 0;
+   }
+
+   
+
+   @keyframes typing{
+    from{
+        width: 0;
+    }
+
+   }
+
+   @keyframes bliking{
+    50%{
+        border-color: transparent;
+    }
+   }
+   
+   .profile-picture{
+        width: 20%;
+        min-width: 250px;
+        max-width: 350px;
+        border-radius: 50%;  
+   }
+
+   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+    li{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    cursor: pointer;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+    }
+    .imagens2{
+        height: 3rem;
+        width: 3rem;
+    }
+    .hard-skills{
+        justify-content: center;
+        align-items: center;
+    }
+    .hard-skills h1{
+     color: #227adf;
+    font-size: 2.4rem;
+     }
+     #js{
+        border-radius: 20%;
+     }
+
+     .projetos{
+        margin-top: 150px;
+     }
+     .container-projetos{
+
+        width: 100%;
+       }
+       .projeto-um{
+        width: 90%;
+        max-width: 400px;
+       }
+       .container-projetos p{
+       color: #161e2b;
+       
+       font-family: 'Nunito', sans-serif;
+       font-weight: 500;
+       text-align: justify;
+       text-align-last: center;
+        text-justify: inter-word;
+       padding: 0 4rem;
+       margin-bottom: 30px;
+       }
+       .container-projetos h2{
+        margin-top: 80px;
+        color: black;
+       }
+       .projetos-link{
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+        background-color: black;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.432);
+        border-radius: 5px;
+        color: #f8f8f8;
+        cursor: pointer;
+        text-decoration: none;
+       }
+       
+@media (min-width:320px) and (max-width: 520px){
+  
+    .stack{
+        margin-top: 10px;
+        padding: 0 20px 0;
+        font-size: 2.4rem;
+        
+    }
+   .first-part{
+    height: 550px;
+   }
+   .container-imagens{
+    margin-top: 40px;
+   }
+   .imagens{
+    width: 50px;
+   }
+   #git{
+    margin-right: 5px;
+   }
+   .hard-skills{
+    margin-top: 200px;
+   }
+   .projetos{
+    color: #227adf;
+    font-size: 2.4rem;
+   }
+   
+   
+   
+}
+@media (min-width:521px) and (max-width: 767px){
+    
+   
+     
+}
+
+
+@media (min-width:768px) and (max-width: 1023px){
+    
+   
+     
+}
+@media (min-width:1024) and (max-width: 1280px){
+    
+   
+     
+}
+
