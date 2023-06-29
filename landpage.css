@@ -8,6 +8,9 @@ body{
     overflow-x: hidden;
     background-color: #f8f8f8;
 }
+html{
+    scroll-behavior: smooth;
+}
 .image_logo{
  width: 45px;
 }
@@ -91,15 +94,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;    
+    text-align: center;   
+    margin-top:57px; 
 }
 .first-part{
     width: 100%;
-    background: linear-gradient(to top, #161e2b, rgb(32, 45, 88));
+    background: linear-gradient(to bottom, #161e2b 0%,  rgb(32, 45, 88) 90%, #fff 100%);
     color: #fff;
     font-family: 'Gothan';
-    border-bottom-right-radius: 8%;
-    border-bottom-left-radius: 8%;
+  
 }
 .detalhes{
     font-family: 'Nunito', sans-serif;
@@ -127,6 +130,7 @@ body{
         min-width: 250px;
         max-width: 350px;
         border-radius: 50%;  
+        margin-top: 40px;
    }
 
    ul {
@@ -145,9 +149,9 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,.09);
     cursor: pointer;
     display: flex;
-    height: 4rem;
+    height: 6rem;
     justify-content: center;
-    width: 4rem;
+    width: 6rem;
     }
     .imagens2{
         height: 3rem;
@@ -174,16 +178,16 @@ body{
        }
        .projeto-um{
         width: 90%;
-        max-width: 400px;
+        min-width: 300px;
+        max-width: 600px;
        }
        .projeto-dois{
         width: 50%;
-        max-width: 400px;
+        max-width: 250px;
         filter: drop-shadow(5px 6px 12px rgba(0, 0, 0, 0.308));
        }
        .container-projetos p{
        color: #161e2b;
-       
        font-family: 'Nunito', sans-serif;
        font-weight: 500;
        text-align: justify;
@@ -208,7 +212,7 @@ body{
         text-decoration: none;
        }
        
-@media (min-width:320px) and (max-width: 520px){
+@media (min-width:320px) and (max-width: 767px){
     .image_logo{
         margin-right: 60px;
        }
@@ -220,7 +224,42 @@ body{
         
     }
    .first-part{
-    height: 550px;
+    height: 600px;
+   }
+   .container-imagens{
+    margin-top: 40px;
+   }
+   .imagens{
+    width: 50px;
+   }
+   #git{
+    margin-right: 5px;
+   }
+   .hard-skills{
+    margin-top: 200px;
+   }
+   .projetos{
+    color: #227adf;
+    font-size: 2.4rem;
+   }
+
+}
+@media (min-width:525px) and (max-width: 767px){
+    .image_logo{
+        margin-right: 100px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width: 1262px){
+    .stack{
+        margin-top: 10px;
+        padding: 0 20px 0;
+        font-size: 2.4rem;
+        
+    }
+   .first-part{
+    height: 600px;
    }
    .container-imagens{
     margin-top: 40px;
@@ -239,24 +278,141 @@ body{
     font-size: 2.4rem;
    }
    
-   
-   
+    .container-projetos p{
+        padding: 0 9rem;
+    }
 }
-@media (min-width:521px) and (max-width: 767px){
-    
+@media (min-width: 1263px){
+    .container-imagens{
+        margin-right: 700px;
+    }
+    .stack{
+        margin-top: -210px;
+        margin-right: 700px;
+        padding: 0 20px 0;
+        font-size: 6rem;   
+    }
+   .first-part{
+    height: 800px;
+   }
+   .container-imagens{
+    margin-top: 40px;
+   }
+   .imagens{
+    width: 50px;
+   }
+   #git{
+    margin-right: 5px;
+   }
+   .hard-skills{
+    margin-top: 200px;
+   }
+   .projetos{
+    color: #227adf;
+    font-size: 2.4rem;
+   }
    
-     
-}
+    .container-projetos p{
+        padding: 0 9rem;
+    }
+   
+   
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;   
+        margin-top:57px; 
+    }
+    .profile-picture{
+        margin-left: 60rem;
+        margin-top: 200px;
+    }
+    .first-part{
+        width: 100%;
+        background: linear-gradient(to bottom, #161e2b 0%,  rgb(32, 45, 88) 90%, #fff 100%);    
+        color: #fff;
+        font-family: 'Gothan';
+        height: 650px;
+    }
+    .detalhes{
+        font-family: 'Nunito', sans-serif;
+        font-family: 800;
+        margin-right: 700px;
+        padding: 0 100px 0;
+        font-size: 1.2rem;
+        margin-top: -50px;
+       }
 
+       .profile-picture{
+        align-self: flex-end;
+        padding: 0 10%;
+        width: 20%;
+        min-width: 250px;
+        max-width: 350px;
+        border-radius: 50%;  
+        margin-top: 40px;
+   }
 
-@media (min-width:768px) and (max-width: 1023px){
+  
+    .imagens2{
+        height: 3rem;
+        width: 3rem;
+    }
+    .hard-skills{
+        justify-content: center;
+        align-items: center;
+    }
+    .hard-skills h1{
+     color: #227adf;
+    font-size: 2.4rem;
+     }
+     #js{
+        border-radius: 20%;
+     }
+
+     .projetos{
+        margin-top: 150px;
+     }
+     .container-projetos{
+        
+        width: 100%;
+       }
+       .projeto-um{
+        width: 90%;
+        min-width: 300px;
+        max-width: 600px;
+       }
+       .projeto-dois{
+        width: 50%;
+        max-width: 250px;
+        filter: drop-shadow(5px 6px 12px rgba(0, 0, 0, 0.308));
+       }
+       .container-projetos p{
+       color: #161e2b;
+       font-family: 'Nunito', sans-serif;
+       font-weight: 500;
+       text-align: justify;
+       text-align-last: center;
+        text-justify: inter-word;
+       padding: 0 20rem;
+       margin-bottom: 30px;
+       }
+       .container-projetos h2{
+        margin-top: 80px;
+        color: black;
+       }
+       .projetos-link{
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+        background-color: black;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.432);
+        border-radius: 5px;
+        color: #f8f8f8;
+        cursor: pointer;
+        text-decoration: none;
+       }
     
-   
-     
-}
-@media (min-width:1024) and (max-width: 1280px){
-    
-   
-     
 }
 

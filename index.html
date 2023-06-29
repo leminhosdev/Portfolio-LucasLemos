@@ -25,10 +25,10 @@
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
             </button>
-            <a href="#" class="active">Inicio</a>
-            <a href="#">Hard skills</a>
-            <a href="#">Projetos</a>
-            <a href="#">Sobre mim</a>
+            <a href="#container" >Inicio</a>
+            <a href="#hard-skills">Hard skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobremim">Sobre mim</a>
         </div>
     </div>
         
@@ -37,8 +37,8 @@
         <div class="first-part">
             <img class="profile-picture" src="images/mexendo no pc.png">
             <h1 class="stack">Desenvolvedor Fullstack</h1>
-            <span class="detalhes">Olá! Sou Lucas Lemos, Tenho 18 anos e atuo como fullStack desenvolvendo aplicações por completo
-            </span>
+            <p class="detalhes">Olá! Sou Lucas Lemos, Tenho 18 anos e atuo como fullStack desenvolvendo aplicações por completo
+            </p>
             <div class="container-imagens">
             <a href="https://github.com/leminhosdev">
                 <img class="imagens" id="git" src="images/git.png" alt="">
@@ -50,10 +50,10 @@
                 <img class="imagens"  src="images/form.png" alt="">
             </a>
             </div>
-            <div class="hard-skills">
+            <div class="hard-skills" id="hard-skills">
                 <h1>Hard Skills</h1>
                 <ul>
-                    <li><img class="imagens2" src="images/java.png" alt=""></li>
+                    <li><img class="imagens2" src="images/java.png" alt="">
                     <li><img class="imagens2" src="images/spring.png" alt=""></li>
                     <li><img class="imagens2" src="images/sql.png" alt=""></li>
                     <li><img class="imagens2" src="images/ts.png" alt=""></li>
@@ -62,12 +62,12 @@
                     <li><img class="imagens2"  src="images/HTMLCSS.png" alt=""></li>
                 </ul>
             </div>
-            <h1 class="projetos">Projetos</h1>
-            <div class="container-projetos">
+            <h1 class="projetos" id="projetos">Projetos</h1>
+            <div class="container-projetos" >
                 <h2>PortalWeb3</h2>
                 <img  class="projeto-um" src="images/banner.png">
                 <p>Plataforma para ver dados ao vivo sobre NFTS, permitindo o usuário criar sua empresa para postar serviços que ela esteja necessitando, ou ver serviços para prestar. Facilitando a adesão de empresas ao mundo de blockChain/Web3</p>
-               <a class="projetos-link" href="https://portalweb3news.web.app/">Visualizar Site</a>  
+               <a class="projetos-link" href="https://portalweb3news.web.app/">Acessar a plataforma</a>  
             </div>
             <div class="container-projetos">
                 <h2>Loading...</h2>
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-    <footer></footer>
+    <footer>    </footer>
 </body>
 <script>
     var header = document.getElementById('header')
