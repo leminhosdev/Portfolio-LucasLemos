@@ -47,7 +47,8 @@
             <a href="https://www.linkedin.com/in/lucas-lemos-b5879625b/">
                 <img class="imagens"  src="images/link.png" alt="">
             </a>
-            <a href="https://www.linkedin.com/in/lucas-lemos-b5879625b/">
+            <a 
+            id="downloadButton">
                 <img class="imagens"  src="images/form.png" alt="">
             </a>
             </div>
@@ -75,17 +76,48 @@
                 <h2>Loading...</h2>
                 <img  class="projeto-dois"  src="images/clock.png" >
                 <p>Proximo projeto está em andamento, me siga no linkedin para ficar atualizado sobre as próximas atualizações</p>
-                <a href="https://www.linkedin.com/in/lucas-lemos-b5879625b/">
+                <a href="https://www.linkedin.com/in/lucas-lemos-b5879625b/"> 
                     <img class="imagens" id="projeto-linkedin" src="images/linkedin.png" alt="">
+                    </a>
             </div>
+            <div class="about-me" >
+            <h1>Sobre mim</h1>
+            <p id="sobremim">Me chamos Lucas lemos, tenho 18 anos e sou da Area de T.I, hoje baseio minha rotina por completo na para melhorar minhas skills como progamador, sou uma pessoa que desde de pequeno despertei interesse por essa área e pelo mundo do empreendimento. Logo ao final de 2022 descidi mergulhar de cabeça nos estudos, de lá ate agora já somei ajuda alguns projetos open-source, e participo de uma equipe de desenvolvimento. Atuo como Fullstack, desenvolvo aplicações completas, desde a manipulação do banco de dados à criação de interfaces, consumo de APIS, segurança da aplicação. Trabalho com Java, springBoot, SQL, Docker, Typescript, Angular, JavaScript, git, html/css. Caso queira entrar em contato, alguns dos meus meios de contato como o linkedin e email estão disponiveis</p>
+
+            <h4 style="color: #227ADF;">Email para contato</h4>
+            <p>lucaslemos8294@gmail.com</p>
         </div>
+        <footer>
+            <div class="container-footer">
+             <p class="madeyby">Made by Lucas lemos®</p>
+             <div class="imagens-footer">
+                <a  id="downloadButton2" style="cursor: pointer;"><img class="final" src="images/form.png"></a>
+               <a href="https://www.linkedin.com/in/lucas-lemos-b5879625b/"><img class="final" src="images/link.png"></a>
+               <a href="https://github.com/leminhosdev" ><img class="final" src="images/git.png"></a>
+               <a href=""></a>
+             </div>
+             
+            </div>  
+        </footer>
+        </div>
+        
     </div>
     
-    <footer>    </footer>
+    
+    
 </body>
+
 <a class="back-to-top" href="#container">
  <img src="images/seta.png">
 </a>
+<script>
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', downloadFile);
+  
+    function downloadFile() {
+        window.open('images/curr.pdf');
+    }
+  </script>
 <script>
     var header = document.getElementById('header')
     var navigationHeader = document.getElementById('navigation_header')
@@ -118,7 +150,15 @@
 
  
 </script>
-<script >
 
-</script>
+<script>
+    const downloadButton2 = document.getElementById('downloadButton2');
+    downloadButton2.addEventListener('click', downloadFile);
+  
+    function downloadFile() {
+        window.open('images/curr.pdf');
+    }
+  </script>
+
+
 </html>
