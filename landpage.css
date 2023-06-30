@@ -11,6 +11,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+
+
 .image_logo{
  width: 45px;
 }
@@ -33,6 +36,7 @@ html{
 }
 .navigation_header{
     gap: 3em;
+    margin-right: 200px;
     z-index: 4;
 }
 .navigation_header a{
@@ -54,6 +58,16 @@ html{
   cursor: pointer;
   border: none;
     display: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.back-to-top img{
+width: 60px;
+
 }
 @media screen and (max-width: 768px) {
     .icon_header{
